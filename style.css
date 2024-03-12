@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dosis&family=Permanent+Marker&family=Philosopher&family=Pixelify+Sans&family=Rajdhani&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url('bg.jpg');
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 10px;
+    right: 150px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Philosopher', sans-serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Philosopher', sans-serif;
+}
+
+#board{
+    background: linear-gradient(rgb(143, 255, 139),rgb(241, 255, 93));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(80, 144, 255),rgb(44, 67, 199),rgb(155, 240, 255));
+    border: .25vmin solid rgb(0, 14, 90);
+    transform: scale(1.02);
+    border-radius: 5px;
+}
+
+.snake{
+    background: linear-gradient(rgb(0, 145, 67),rgb(0, 255, 0),rgb(0, 145, 67));
+    border: .25vmin solid rgb(0, 90, 10);
+    border-radius: 7px;
+}
+
+.food{
+    background: linear-gradient(red,rgb(204, 0, 255),rgb(255, 70, 215));
+    border: .25vmin solid rgb(93, 0, 121);
+    border-radius: 12px;
+}
